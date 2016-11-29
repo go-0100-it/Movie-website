@@ -50,7 +50,7 @@ $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (eve
 $(document).on('click', '.view-trailer', function (event) {
     var trailerYouTubeId = obj.movies[sessionStorage.getItem('movie_num')].trailer_youtube_id;
     console.log(trailerYouTubeId);
-    var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+    var sourceUrl = 'https://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
     console.log(sourceUrl);
     $("#trailer-video-container").empty().append($("<iframe></iframe>", {
       'id': 'trailer-video',
